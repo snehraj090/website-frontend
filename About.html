@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Information Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" style="min-height: 100vh;">
+            <!-- Sidebar -->
+            <div class="col-lg-3 col-md-4 sidebar">
+                <div class="sidebar-brand">
+                    <h2>MyWebsite</h2>
+                </div>
+                <ul class="sidebar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html" class="active">About</a></li>
+                    <li><a href="Articles.html">Articles</a></li>
+                    <li><a href="Project.html">Projects</a></li>
+                    <li><a href="contect.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-lg-9 col-md-8 main-content">
+                <div class="header">
+                    <h1>About Us</h1>
+                    <p>Learn more about who we are</p>
+                </div>
+
+                <div class="content-section">
+                    <h2>Our Story</h2>
+                    <p>Share your story, background, and mission here. Tell your visitors what makes you unique and what you're passionate about.</p>
+                </div>
+
+                <div class="content-section">
+                    <h2>Our Team</h2>
+                    <p>Introduce your team members and highlight their expertise and contributions to your project or organization.</p>
+                </div>
+
+                <div class="content-section">
+                    <h2>Our Values</h2>
+                    <p>Share your core values and what drives your work. This helps build trust and connection with your audience.</p>
+                </div>
+
+                <footer>
+                    <p>&copy; 2026 MyWebsite. All rights reserved.</p>
+                    <p>Built with Bootstrap & Love</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.sidebar-nav a').forEach(link => {
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
